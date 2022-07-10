@@ -250,7 +250,6 @@ Proporcion_de_Genero_por_Delito <-
   xlab("Delito") +
   ylab("Proporción") +
   labs(fill = "Género") +
-  coord_flip() +
   theme_minimal()
 ggplotly(Proporcion_de_Genero_por_Delito) %>% config(locale = 'es')
 ```
