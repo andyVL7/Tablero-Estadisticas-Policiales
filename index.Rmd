@@ -4,6 +4,7 @@ author: "Andy Johel Valverde Ledezma"
 date: "10/07/2022"
 output:
   flexdashboard::flex_dashboard:
+    theme: sandstone
     orientation: rows
     social: menu
     source_code: embed
@@ -250,6 +251,7 @@ Proporcion_de_Genero_por_Delito <-
   xlab("Delito") +
   ylab("Proporción") +
   labs(fill = "Género") +
+  coord_flip() +
   theme_minimal()
 ggplotly(Proporcion_de_Genero_por_Delito) %>% config(locale = 'es')
 ```
